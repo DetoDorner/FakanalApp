@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "413335129911",
+    "project_id": "fakanalapp",
+    "storage_bucket": "fakanalapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413335129911:android:71e731a7384d73fb0e54b2",
+        "android_client_info": {
+          "package_name": "com.example.fakanalapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Lpvb3jMCiWLNDPNSCTWEdgMiDXB51fM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
