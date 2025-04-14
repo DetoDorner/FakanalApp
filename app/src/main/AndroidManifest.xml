@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- 🔐 Internet hozzáférés szükséges a Firebase-hez -->
+    <!-- Internet hozzáférés szükséges a Firebase-hez -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -17,7 +17,7 @@
         tools:targetApi="31">
         <activity
             android:name=".RegisterActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".EmailLoginActivity"
             android:exported="false" />

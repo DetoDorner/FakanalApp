@@ -1,15 +1,31 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Gradle
+.gradle/
+build/
+*/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration file (contains SDK path, etc.)
 local.properties
+
+# IDE-specific files
+.idea/
+*.iml
+
+# Android Studio Navigation Editor
+.navigation/
+
+# Android Studio captures
+captures/
+
+# macOS
+.DS_Store
+
+# NDK
+.cxx/
+.externalNativeBuild/
+
+# Log files
+*.log
+
+# Signing keys (ha használsz)
+*.jks

@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,6 +24,10 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        TextView title = findViewById(R.id.register_title);
+        Animation fancyAnim = AnimationUtils.loadAnimation(this, R.anim.zoom_rotate_in);
+        title.startAnimation(fancyAnim);
 
         // Firebase inicializálás
         mAuth = FirebaseAuth.getInstance();

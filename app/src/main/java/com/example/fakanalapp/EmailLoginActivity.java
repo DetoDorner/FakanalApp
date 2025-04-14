@@ -2,8 +2,11 @@ package com.example.fakanalapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +26,10 @@ public class EmailLoginActivity extends AppCompatActivity {
 
         // Firebase auth inicializálása
         mAuth = FirebaseAuth.getInstance();
+
+        TextView title = findViewById(R.id.emailLogin_Title);
+        Animation fancyAnim = AnimationUtils.loadAnimation(this, R.anim.zoom_rotate_in);
+        title.startAnimation(fancyAnim);
 
         // Nézetek összekötése (frissített ID-k)
         emailInput = findViewById(R.id.emailLogin_emailInput);
