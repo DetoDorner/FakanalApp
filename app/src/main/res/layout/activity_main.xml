@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:background="#FFF8E1">
+    android:background="#1D001D">
 
     <TextView
         android:layout_width="match_parent"
@@ -15,8 +14,8 @@
         android:textStyle="bold"
         android:gravity="center"
         android:padding="16dp"
-        android:textColor="#000000"
-        android:background="#FFE0B2" />
+        android:textColor="#FFFFFF"
+        android:background="#420D39" />
 
     <TextView
         android:layout_width="match_parent"
@@ -24,5 +23,27 @@
         android:layout_marginTop="24dp"
         android:textSize="16sp"
         android:textColor="#333333" />
+
+    <Button
+        android:id="@+id/buttonShowRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receptlista"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:elevation="6dp"
+        android:padding="14dp" />
+
+    <Button
+        android:id="@+id/buttonAddRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Új recept hozzáadása"
+        android:layout_marginTop="24dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:elevation="6dp"
+        android:padding="14dp" />
 
 </LinearLayout>

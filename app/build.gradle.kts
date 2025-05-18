@@ -47,5 +47,10 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")
     // 🔑 Google Sign-In (Google fiókos belépéshez)
     implementation("com.google.android.gms:play-services-auth:21.0.0")
+    // 🔥 Firestore adatbázis
+    implementation("com.google.firebase:firebase-firestore")
 
+    // 📋 RecyclerView és CardView (!!!)
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.cardview:cardview:1.0.0")
 }

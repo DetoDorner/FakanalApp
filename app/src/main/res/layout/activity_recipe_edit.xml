@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/edit_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D001D"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textEditTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Recept szerkesztése"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#420D39"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextEditName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Név"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/textEditTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <EditText
+        android:id="@+id/editTextEditDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Leírás"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextEditName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <Spinner
+        android:id="@+id/spinnerEditCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextEditDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <Button
+        android:id="@+id/buttonEditSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mentés"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerEditCategory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

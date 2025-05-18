@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">FakanalApp</string>
     <string name="default_web_client_id">413335129911-asfg8vd003g822cbhmk2p3av69324ejf.apps.googleusercontent.com</string>
+
+    <!-- Recept kategóriák Spinnerhez -->
+    <string-array name="recipe_categories">
+        <item>Válassz kategóriát!</item>
+        <item>leves</item>
+        <item>főétel</item>
+        <item>desszert</item>
+        <item>snack</item>
+    </string-array>
+
+    <!-- Szűrő opciók a receptlistához -->
+    <string-array name="recipe_filters">
+        <item>Minden recept</item>
+        <item>Csak desszertek</item>
+        <item>Név szerint rendezve</item>
+        <item>Legelső 5 recept</item>
+        <item>Kedvencek</item>
+    </string-array>
 </resources>
